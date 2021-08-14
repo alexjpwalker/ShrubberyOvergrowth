@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="0DB9C217-83F0-475C-B2D7-9816A8121093" version="1">
+	<Properties>
+		<Name>Shrubbery Overgrowth</Name>
+		<Description>Adds a new Natural Disaster to the game, the Shrubbery Overgrowth.</Description>
+		<Teaser>Adds a new Natural Disaster to the game, the Shrubbery Overgrowth.</Teaser>
+		<Authors>CaptainCustard</Authors>
+		<CompatibleVersions>2.0</CompatibleVersions>
+	<AffectsSavedGames>0</AffectsSavedGames>
+	<SupportsSinglePlayer>1</SupportsSinglePlayer>
+	<SupportsMultiplayer>1</SupportsMultiplayer>
+	<SupportsHotSeat>1</SupportsHotSeat>
+	<SupportsPlayByCloud>1</SupportsPlayByCloud>
+	<Stability>Stable</Stability>
+	</Properties>
+	<InGameActions>
+		<UpdateArt id="ShrubberyOvergrowthArt">
+			<File>ShrubberyOvergrowth.dep</File>
+		</UpdateArt>
+		<UpdateText id="ShrubberyOvergrowth_Text">
+			<Properties>
+				<LoadOrder>8500</LoadOrder>
+			</Properties>
+			<File priority="2">Text/en_US/ShrubberyOvergrowth_Text.xml</File>
+		</UpdateText>
+		<UpdateDatabase id="ShrubberyOvergrowth">
+			<File>Data/ShrubberyOvergrowth_Data.xml</File>
+		</UpdateDatabase>
+		<ReplaceUIScript id="ShrubberyOvergrowth_ClimateScreen">
+			<Properties>
+				<LoadOrder>9000</LoadOrder>
+				<LuaContext>ClimateScreen</LuaContext>
+				<LuaReplace>UI/Replacements/ClimateScreen_ShrubberyOvergrowth.lua</LuaReplace>
+			</Properties>
+		</ReplaceUIScript>
+		<ImportFiles id="ShrubberyOvergrowth_Files">
+			<File>UI/Replacements/ClimateScreen_ShrubberyOvergrowth.lua</File>
+			<File>UI/Loaders/TutorialLoader_ShrubberyOvergrowth.lua</File>
+			<File>UI/Replacements/ClimateScreen.xml</File>
+		</ImportFiles>
+	</InGameActions>
+	<FrontEndActions>
+		<UpdateArt id="ShrubberyOvergrowthSettingsArt">
+			<File>ShrubberyOvergrowth.dep</File>
+		</UpdateArt>
+	</FrontEndActions>
+	<Files>
+		<File>LICENSE</File>
+		<File>ShrubberyOvergrowth.dep</File>
+		<File>ArtDefs/Features.artdef</File>
+		<File>Data/ShrubberyOvergrowth_Data.xml</File>
+		<File>Text/en_US/ShrubberyOvergrowth_Text.xml</File>
+		<File>UI/Loaders/TutorialLoader_ShrubberyOvergrowth.lua</File>
+		<File>UI/Replacements/ClimateScreen_ShrubberyOvergrowth.lua</File>
+		<File>UI/Replacements/ClimateScreen.xml</File>
+	</Files>
+</Mod>

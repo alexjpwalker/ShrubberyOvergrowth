@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<EnglishText>
+		<Row Tag="LOC_TUTORIAL_SHRUBBERIES">
+			<Text>For unknown reasons, a Shrubbery has sprung up in a place that it should not be! The overgrowth will spread to any adjacent plot that could contain Forest, and currently does not!</Text>
+		</Row>
+		<Row Tag="LOC_CLIMATE_SHRUBBERY">
+			<Text>Shrubbery Overgrowths</Text>
+		</Row>
+		<Row Tag="LOC_CLIMATE_SHRUBBERY_EVENT_DESCRIPTION_TOOLTIP">
+			<Text>SHRUBBERY OVERGROWTH EVENT[NEWLINE][NEWLINE]When event occurs:[NEWLINE]- These start in a random Grassland, Plains or Tundra tile with no Woods or Jungle.[NEWLINE]- Spreads to adjacent Grassland, Plains and Tundra tiles with no Woods or Jungle.[NEWLINE][NEWLINE]- Affected tiles will damage units and pillage improvements.</Text>
+		</Row>
+		<Row Tag="LOC_RANDOM_EVENT_SHRUBBERY_NAME">
+			<Text>Shrubbery Overgrowth</Text>
+		</Row>
+		<Row Tag="LOC_RANDOM_EVENT_SHRUBBERY_DESCRIPTION">
+			<Text>Seemingly from out of nowhere, a Shrubbery appears in a place that it should not be, and it looks to grow ever larger.</Text>
+		</Row>
+		<Row Tag="LOC_RANDOM_EVENT_SHRUBBERY_EFFECT_DESCRIPTION">
+			<Text>+ The resulting Forest has improved yields [NEWLINE]- Damages units and improvements</Text>
+		</Row>
+		<Row Tag="LOC_FEATURE_OVERGROWING_SHRUBBERY_NAME">
+			<Text>Wild Shrubbery (Active)</Text>
+		</Row>
+		<Row Tag="LOC_FEATURE_OVERGROWING_SHRUBBERY_DESCRIPTION">
+			<Text>A shrubbery that has unexpectedly appeared and is aggressively spreading.</Text>
+		</Row>
+		<Row Tag="LOC_FEATURE_OVERGROWN_SHRUBBERY_NAME">
+			<Text>Wild Shrubbery (Dormant)</Text>
+		</Row>
+		<Row Tag="LOC_FEATURE_OVERGROWN_SHRUBBERY_DESCRIPTION">
+			<Text>A shrubbery that has unexpectedly appeared, but seems to have stopped spreading.</Text>
+		</Row>
+	</EnglishText>
+</GameData>

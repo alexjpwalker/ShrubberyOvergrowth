@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GameInfo>
+	<Types>
+		<!-- Features -->
+		<Row Type="FEATURE_OVERGROWING_SHRUBBERY" Kind="KIND_FEATURE"/>
+		<Row Type="FEATURE_OVERGROWN_SHRUBBERY" Kind="KIND_FEATURE"/>
+		<!-- Environmental Effects -->
+		<Row Type="RANDOM_EVENT_SHRUBBERY" Kind="KIND_RANDOM_EVENT"/>
+	</Types>
+	<Features>
+		<Row FeatureType="FEATURE_OVERGROWING_SHRUBBERY" Name="LOC_FEATURE_OVERGROWING_SHRUBBERY_NAME" Description="LOC_FEATURE_OVERGROWING_SHRUBBERY_DESCRIPTION" SightThroughModifier="1" DefenseModifier="3" MovementChange="1" Appeal="-1" AntiquityPriority="1" DangerValue="80" Settlement="false"/>
+		<Row FeatureType="FEATURE_OVERGROWN_SHRUBBERY" Name="LOC_FEATURE_OVERGROWN_SHRUBBERY_NAME" Description="LOC_FEATURE_OVERGROWN_SHRUBBERY_DESCRIPTION" SightThroughModifier="1" DefenseModifier="3" MovementChange="1" Appeal="-1" AntiquityPriority="1" Settlement="false"/>
+	</Features>
+	<Features_XP2>
+		<Row FeatureType="FEATURE_OVERGROWING_SHRUBBERY" ValidForReplacement="true"/>
+		<Row FeatureType="FEATURE_OVERGROWN_SHRUBBERY" ValidForReplacement="true"/>
+	</Features_XP2>
+	<Feature_ValidTerrains>
+		<Row FeatureType="FEATURE_OVERGROWING_SHRUBBERY" TerrainType="TERRAIN_GRASS"/>
+		<Row FeatureType="FEATURE_OVERGROWING_SHRUBBERY" TerrainType="TERRAIN_PLAINS"/>
+		<Row FeatureType="FEATURE_OVERGROWING_SHRUBBERY" TerrainType="TERRAIN_TUNDRA"/>
+		<Row FeatureType="FEATURE_OVERGROWING_SHRUBBERY" TerrainType="TERRAIN_GRASS_HILLS"/>
+		<Row FeatureType="FEATURE_OVERGROWING_SHRUBBERY" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		<Row FeatureType="FEATURE_OVERGROWING_SHRUBBERY" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+		<Row FeatureType="FEATURE_OVERGROWN_SHRUBBERY" TerrainType="TERRAIN_GRASS"/>
+		<Row FeatureType="FEATURE_OVERGROWN_SHRUBBERY" TerrainType="TERRAIN_PLAINS"/>
+		<Row FeatureType="FEATURE_OVERGROWN_SHRUBBERY" TerrainType="TERRAIN_TUNDRA"/>
+		<Row FeatureType="FEATURE_OVERGROWN_SHRUBBERY" TerrainType="TERRAIN_GRASS_HILLS"/>
+		<Row FeatureType="FEATURE_OVERGROWN_SHRUBBERY" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		<Row FeatureType="FEATURE_OVERGROWN_SHRUBBERY" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+	</Feature_ValidTerrains>
+	<RandomEvents>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" Name="LOC_RANDOM_EVENT_SHRUBBERY_NAME" Description="LOC_RANDOM_EVENT_SHRUBBERY_DESCRIPTION" EffectString="LOC_RANDOM_EVENT_SHRUBBERY_EFFECT_DESCRIPTION" EffectOperatorType="SHRUBBERY" Severity="1" Hexes="1" Duration="9" ChanceIncreasePerDegree="50" IconLarge="ClimateEvent_Drought" IconSmall="ClimateEventStat_Drought"/>
+	</RandomEvents>
+	<RandomEvent_Notifications>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" NotificationType="NOTIFICATION_SHRUBBERY_GROWTH_STARTS" Title="LOC_SHRUBBERY_GROWTH_STARTED" Summary="LOC_SHRUBBERY_GROWTH_STARTED_DESC" MaxTurn="0" CompilationRadius="4"/>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" NotificationType="NOTIFICATION_SHRUBBERY_GROWTH_ENDS" Title="LOC_SHRUBBERY_GROWTH_ENDED" Summary="LOC_SHRUBBERY_GROWTH_ENDED_DESC" MinTurn="2" MaxTurn="2" CompilationRadius="4"/>
+	</RandomEvent_Notifications>
+	<RandomEvent_Terrains>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" TerrainType="TERRAIN_PLAINS"/>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" TerrainType="TERRAIN_GRASS"/>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" TerrainType="TERRAIN_GRASS_HILLS"/>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" TerrainType="TERRAIN_TUNDRA"/>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+	</RandomEvent_Terrains>
+	<RandomEvent_Features>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" FeatureType="FEATURE_NONE"/>
+	</RandomEvent_Features>
+	<RandomEvent_Frequencies>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" RealismSettingType="REALISM_SETTING_MINIMAL" OccurrencesPerGame="12"/>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" RealismSettingType="REALISM_SETTING_LIGHT" OccurrencesPerGame="16"/>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" RealismSettingType="REALISM_SETTING_MODERATE" OccurrencesPerGame="24"/>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" RealismSettingType="REALISM_SETTING_HEAVY" OccurrencesPerGame="40"/>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" RealismSettingType="REALISM_SETTING_HYPERREAL" OccurrencesPerGame="60"/>
+	</RandomEvent_Frequencies>
+	<RandomEvent_Damages>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" DamageType="IMPROVEMENT_PILLAGED" Percentage="101" MinTurn="0" MaxTurn="2"/>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" DamageType="DISTRICT_PILLAGED" Percentage="101" MinTurn="0" MaxTurn="2"/>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" DamageType="POPULATION_LOSS" Percentage="101" MinTurn="0" MaxTurn="0"/>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" DamageType="UNIT_KILLED_CIVILIAN" Percentage="101" MinTurn="0" MaxTurn="2"/>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" DamageType="UNIT_DAMAGE_LAND" Percentage="101" MinHP="50" MaxHP="101" MinTurn="0" MaxTurn="2"/>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" DamageType="SPREAD" Percentage="50" MinTurn="1" MaxTurn="2"/>
+	</RandomEvent_Damages>
+	<RandomEvent_Yields>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" YieldType="YIELD_FOOD" Amount="0" FeatureType="FEATURE_OVERGROWING_SHRUBBERY" Percentage="100" ReplaceFeature="true" Turn="0"/>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" YieldType="YIELD_PRODUCTION" Amount="1" FeatureType="FEATURE_OVERGROWN_SHRUBBERY" Percentage="100" ReplaceFeature="true" Turn="2"/>
+		<Row RandomEventType="RANDOM_EVENT_SHRUBBERY" YieldType="YIELD_SCIENCE" Amount="1" FeatureType="FEATURE_FOREST" Percentage="100" ReplaceFeature="true" Turn="6"/>
+	</RandomEvent_Yields>
+	<CivilopediaPageExcludes>
+		<Row SectionId="FEATURES" PageId="FEATURE_OVERGROWING_SHRUBBERY"/>
+		<Row SectionId="FEATURES" PageId="FEATURE_OVERGROWN_SHRUBBERY"/>
+	</CivilopediaPageExcludes>
+</GameInfo>
